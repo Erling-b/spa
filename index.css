@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+nav{
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+    justify-content: end;
+    margin: 0 30px;
+}
+
+nav a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+main{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: auto;
+}
+
+section{
+    scroll-snap-align: center;
+    height: 100vh;
+    padding: 80px;
+}
+
+#orange {
+        background-color: orange;
+        background-image: url("./images/tumblr_p0nqc4eAf61qzt15co1_500.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+#peru {background-color: peru;}
+#royalblue {background-color: royalblue;}
